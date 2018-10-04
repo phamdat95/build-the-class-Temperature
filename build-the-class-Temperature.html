@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Temperature = function (celsius) {
+        this.celsius=celsius;
+        this.getFahrenheit=function () {
+            return this.celsius*1.8+32;
+        };
+        this.getKenvin=function () {
+            return this.celsius+273;
+        };
+    };
+    var temperature = new Temperature(25);
+    var fahrenheit = temperature.getFahrenheit();
+    var kenvin = temperature.getKenvin();
+    document.write('Fahrenheit: ' + fahrenheit+'F'+ '; '+ 'Kenvin: '+kenvin+'K');
+</script>
+</body>
+</html>
